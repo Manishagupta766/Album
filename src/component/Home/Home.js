@@ -5,6 +5,8 @@ import "./home.css"
 import Footer from '../Footer/Footer';
 import CardsApp from '../Cards/cardsapp';
 import Testimonial from '../Moti/moti';
+import PhotoBook from './PhotoBook';
+
 // import Ourwork from '../Ourwork/ourwork';
 import VideoBackground from '../Youtube/youtube';
 // import RadialTeam from '../Second/second';
@@ -14,35 +16,30 @@ function Home() {
   return (
     <div className='home'>
     <Navbar/>
-    {/* <div className='hhh'>
-      <h1 className='head1'> STUDIOS </h1>
-      <p id="p2">Capturing the beauty of your journey.</p>
-    </div> */}
-    {/* <VideoBackground/> */}
-    {/* <div> */}
+   
       <Slideshow/>
 
 
-    {/* </div> */}
-    <br/>
-    {/* <RadialTeam/> */}
   
-    {/* <div> */}
+    <br/>
+  
       < CardsApp/>
-    {/* </div> */}
+ 
     <br>
     </br>
     <Testimonial/>
     
 
-    {/* <Ourwork/> */}
+
 
     <VideoBackground/>
     <SocialMediaIcons />
     
-    {/* <div> */}
+   
     <Footer/>
-    {/* </div> */}
+    <PhotoBook />
+
+   
     </div>
     
 

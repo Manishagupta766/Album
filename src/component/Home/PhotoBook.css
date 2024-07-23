@@ -1,0 +1,68 @@
+/* src/components/PhotoBook.css */
+
+.photo-book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .photo-book {
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    height: 80%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .spiral {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 10px,
+      #333 10px,
+      #333 20px
+    );
+    z-index: 1;
+  }
+  
+  .photo-book-pages {
+    position: relative;
+    height: calc(100% - 20px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .photo-slides {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.7s ease-in-out;
+    width: 100%;
+  }
+  
+  .photo-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
