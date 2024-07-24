@@ -56,6 +56,10 @@ img {
   /* background-color: aqua; */
 }
 
+.card__img:hover {
+  transform: scale(1.05);
+border-radius: 10%;
+}
 .card__container {
   display: grid;
   row-gap: 3.5rem;
