@@ -27,10 +27,7 @@ const slImage = [
     url: slide4,
     caption: "Second Slide",
   },
-  // {
-  //   url: slide3,
-  //   caption: "Third Slide",
-  // },
+
 ];
 
 const Slideshow = () => {
@@ -44,12 +41,6 @@ const Slideshow = () => {
     
   };
 
-  // const spanStyle = {
-  //   padding: '20px',
-  //   fontSize: '30px',
-  //   background: 'transparent',
-  //   color: 'white',
-  // };
 
   return (
     <div className="slide">
@@ -63,7 +54,7 @@ const Slideshow = () => {
                 backgroundImage: `url(${image.url})`,
               }}
             >
-              {/* <span style={spanStyle}>{image.caption}</span> */}
+              
             </div>
           </div>
         ))}

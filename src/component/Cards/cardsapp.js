@@ -3,7 +3,7 @@ import React from 'react';
 import Card from './cards';
 import Birth from '../../assest/bdy1.jpeg'
 import Mirrage from '../../assest/sadi.jpg'
-import Ani from '../../assest/an1.jpg'
+import Ani from '../../assest/an1.jpeg'
 import Pre_wed from '../../assest/pre_wed.jpg'
 function CardsApp() {
   const cards = [
