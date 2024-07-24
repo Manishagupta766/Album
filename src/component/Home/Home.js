@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar';
 import Slideshow from '../Slideshow/Slideshow';
+import Carousel from '../Slideshow/Carousel';
 import "./home.css"
 import Footer from '../Footer/Footer';
 import CardsApp from '../Cards/cardsapp';
@@ -22,12 +23,12 @@ function Home() {
   return (
     <div className='home'>
     <Navbar/>
-   
-      <Slideshow/>
+      <Carousel/>
+      {/* <Slideshow/> */}
 
 <Card2/>
 <FeaturesSection/>
-<VideoSection className="p-10 m-10"></VideoSection>
+{/* <VideoSection className="p-10 m-10"></VideoSection> */}
 {/* < VideoSection/> */}
   
   <br/>

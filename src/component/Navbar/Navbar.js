@@ -97,7 +97,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-2xl font-bold">Ujjwal's studio</h2>
+              <h2 className="text-2xl font-bold">Photo studio</h2>
             </a>
             <div className="md:hidden">
               <button
@@ -145,16 +145,13 @@ export default function Navbar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-            <Link to="/Home"  className="animate-bounce" > <a href="javascript:void(0)">Home</a></Link>
+            <Link to="/"  className="animate-bounce" > <a href="javascript:void(0)">Home</a></Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
               <Link to="/Gallery" className="animate-bounce"> <a href="javascript:void(0)">Gallery</a></Link>
               </li>
 
-              {/* <li className="text-gray-600 hover:text-blue-600">
-              <Link to="/FindJob" className="animate-bounce">  <a href="javascript:void(0)">Search Job</a></Link>
-              </li> */}
-
+              
               <li className="text-gray-600 hover:text-blue-600">
               <Link to="/AboutUs" >  <a href="javascript:void(0)">About Us</a></Link>
               </li>
