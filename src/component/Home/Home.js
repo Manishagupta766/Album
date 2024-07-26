@@ -28,14 +28,16 @@ function Home() {
     <Carousel/>
       
 
-<Card2/>
+      <Card2/>
+    </div>
+   
 <FeaturesSection/>
 <WeddingPage/>
 {/* <VideoSection className="p-10 m-10"></VideoSection> */}
 {/* < VideoSection/> */}
   
   <br/>
-      < CardsApp/>
+      {/* < CardsApp/> */}
  
     <br>
     </br>
@@ -49,7 +51,7 @@ function Home() {
     
    
     <Footer/>
-    <PhotoBook />
+    {/* <PhotoBook /> */}
 
 
 
