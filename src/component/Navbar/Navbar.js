@@ -151,7 +151,10 @@ export default function Navbar() {
               <Link to="/Gallery" className="animate-bounce"> <a href="javascript:void(0)">Gallery</a></Link>
               </li>
 
-              
+              {/* <li className="text-gray-600 hover:text-blue-600">
+              <Link to="/FindJob" className="animate-bounce">  <a href="javascript:void(0)">Search Job</a></Link>
+              </li> */}
+
               <li className="text-gray-600 hover:text-blue-600">
               <Link to="/AboutUs" >  <a href="javascript:void(0)">About Us</a></Link>
               </li>

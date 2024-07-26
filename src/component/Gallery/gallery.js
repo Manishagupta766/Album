@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Navbar from '../Navbar/Navbar';  
 function ImageGallery() {
   const imageUrls = [
     "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
@@ -29,6 +29,8 @@ function ImageGallery() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
       <div className="-m-1 flex flex-wrap md:-m-2">
         {imageUrls.map((imageUrl, index) => (
@@ -74,6 +76,7 @@ function ImageGallery() {
         </div>
       )}
     </div>
+    </>
   );
 }
 

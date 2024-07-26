@@ -43,10 +43,16 @@ function Home() {
 
     {/* <VideoBackground/> */}
     <SocialMediaIcons />
+
+    <PhotoBook />
+
+    <VideoSection/>
     
    
     <Footer/>
-    <PhotoBook />
+    
+
+
 
     <h1 className="bounce">Welcome to My Website</h1>
 

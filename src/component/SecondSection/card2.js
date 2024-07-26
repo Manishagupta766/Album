@@ -13,8 +13,8 @@ const Card2 = () => {
     <div className="container" >
       <div className="card__container " >
         
-        <Card imgSrc={slide1} description="Mirrage" title="Congrs for new  life" />
-        <Card imgSrc={slide2} description="Birthday" title="Welcome to world" />
+        <Card imgSrc={slide1} description="Marriage" title="Congratualtions for new  life" />
+        <Card imgSrc={slide2} description="Birthday" title="Welcome to the world" />
         <Card imgSrc={slide3} description="Party" title="Let's Enjoy" />
         <Card imgSrc={slide4} description="Pre wedding" title="Some beautiful-Memory" />
       </div>
