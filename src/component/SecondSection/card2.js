@@ -6,9 +6,10 @@ import slide1 from '../../assest/ani.jpg';
 import slide3 from '../../assest/party.jpg'; 
 import slide2 from '../../assest/bdy1.jpeg';
 import slide4 from '../../assest/pre_wed.jpg'
+// Add your background image here
+import backgroundImg from "../../assest/background.jpg"
 
 const Card2 = () => {
-
   return (
     <div className="container" >
       <div className="card__container " >
@@ -22,4 +23,5 @@ const Card2 = () => {
   );
 };
 
+export default Card2;
 export default Card2;

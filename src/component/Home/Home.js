@@ -6,7 +6,7 @@ import "./home.css"
 import Footer from '../Footer/Footer';
 import CardsApp from '../Cards/cardsapp';
 import Testimonial from '../Moti/moti';
-import PhotoBook from './PhotoBook';
+import PhotoBook from './WeddingPage';
 import './BounceHeading.css';
 
 
@@ -18,16 +18,19 @@ import Card2 from '../SecondSection/card2';
 import FeaturesSection from './FeaturesSection';
 import VideoSection from './VideoSection';
 import BounceHeading from './BounceHeading';
+import WeddingPage from './WeddingPage';
 // import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className='home'>
     <Navbar/>
-      <Carousel/>
-      {/* <Slideshow/> */}
+    <div className='top'>
+    <Carousel/>
+      
 
 <Card2/>
 <FeaturesSection/>
+<WeddingPage/>
 {/* <VideoSection className="p-10 m-10"></VideoSection> */}
 {/* < VideoSection/> */}
   
@@ -36,7 +39,7 @@ function Home() {
  
     <br>
     </br>
-    <Testimonial/>
+    {/* <Testimonial/> */}
     
 
 
@@ -48,7 +51,6 @@ function Home() {
     <Footer/>
     <PhotoBook />
 
-    <h1 className="bounce">Welcome to My Website</h1>
 
 
    
