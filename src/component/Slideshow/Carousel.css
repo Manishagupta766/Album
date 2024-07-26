@@ -75,6 +75,9 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
+.experience-generator{
+  color: black;
+}
 
 .get-started {
   background-color: #00ff00;

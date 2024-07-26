@@ -21,8 +21,13 @@ const Carousel = () => {
           Our mission is to help you preserve the fleeting moments of life, turning them into timeless treasures. 
         </p>
         <div className="buttons">
+<<<<<<< Updated upstream
           <a href='/gallery'><button className="btn get-started">Get Started</button> </a>
           <a href='/aboutus' > <button className="btn experience-generator">Explore</button></a>
+=======
+          <button className="btn get-started">Get Started</button>
+          <button className="btn experience-generator ">Experience Generator</button>
+>>>>>>> Stashed changes
         </div>
       </div>
       <div className="image-container">

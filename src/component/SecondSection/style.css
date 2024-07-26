@@ -1,23 +1,16 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(82, 60%, 28%);
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
   --body-color: hsl(0, 0%, 95%);
   --container-color: hsl(0, 0%, 100%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --h2-font-size: 1.25rem;
   --small-font-size: .813rem;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
   :root {
     --h2-font-size: 1.5rem;
@@ -25,7 +18,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -44,41 +36,64 @@ img {
   height: auto;
 }
 
-/*=============== CARD ===============*/
+/* Container with fixed background image */
+.relative {
+  position: relative;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .container {
   width: auto;
   display: grid;
   place-items: center;
-  margin-inline: 1rem;
   margin-bottom: 0px;
-
   padding-block: 5rem;
-  /* background-color: aqua; */
+
+  /* Merged properties */
+  /* height: 50vh; (only applies in larger screens) */
 }
 
-.card__img:hover {
-  transform: scale(1.05);
-border-radius: 10%;
-}
-.card__container {
-  display: grid;
-  row-gap: 3.5rem;
-}
-
-.card__article {
-  position: relative;
-  overflow: hidden;
+.container2 {
+  width: auto;
+  margin-inline: 2rem;
+  padding-block: 5rem;
 }
 
 .card__img {
-  width: 328px;
-  border-radius: 1.5rem;
+  width: 348px;
+  /* Merged properties */
+  height: 200px;
+  /* border: 8px solid  ; */
+  object-fit: cover;
+  /* Removed duplicated properties */
 }
 
+/* .card__img:hover{
+
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+
+
+} */
 .card__data {
   width: 280px;
   background-color: var(--container-color);
-  padding: 1rem 1rem;
+  padding: 1rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
   position: absolute;
@@ -88,12 +103,17 @@ border-radius: 10%;
   margin-inline: auto;
   opacity: 0;
   transition: opacity 1s 1s;
+  /* Merged properties */
+  /* Removed duplicated properties */
 }
 
 .card__description {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
+  color: gray;
+  font-weight: 200;
+  /* Merged properties */
 }
 
 .card__title {
@@ -101,6 +121,7 @@ border-radius: 10%;
   font-weight: 500;
   color: var(--title-color);
   margin-bottom: .75rem;
+  font-weight: 600; /* Merged properties */
 }
 
 .card__button {
@@ -108,13 +129,27 @@ border-radius: 10%;
   font-size: var(--small-font-size);
   font-weight: 500;
   color: var(--first-color);
+  /* Merged properties */
 }
 
 .card__button:hover {
   text-decoration: underline;
 }
 
-/* Naming animations in hover */
+.card__article {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 0.5rem;
+  /* Merged properties */
+}
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+  /* Merged properties */
+}
+
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
   opacity: 1;
@@ -133,7 +168,6 @@ border-radius: 10%;
   animation: remove-data 1s forwards;
 }
 
-/* Card animation */
 @keyframes show-data {
   50% {
     transform: translateY(-10rem);
@@ -171,8 +205,6 @@ border-radius: 10%;
   }
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 340px) {
   .container {
     margin-inline: 1rem;
@@ -184,7 +216,6 @@ border-radius: 10%;
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 768px) {
   .card__container {
     grid-template-columns: repeat(2, 1fr);
@@ -192,7 +223,6 @@ border-radius: 10%;
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
     height: 50vh;
@@ -201,15 +231,11 @@ border-radius: 10%;
   .card__container {
     grid-template-columns: repeat(4, 1fr);
   }
-  .card__img {
+  /* .card__img {
     width: 320px;
-  }
+  } */
   .card__data {
     width: 300px;
     padding-inline: 2.5rem;
   }
 }
-
-
-
-

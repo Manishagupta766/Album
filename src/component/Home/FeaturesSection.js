@@ -1,10 +1,7 @@
-// src/components/FeaturesSection.js
-
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMedal, faBook, faShippingFast, faCity } from '@fortawesome/free-solid-svg-icons';
- // Optional for additional styling
- import './FeaturesSection.css';
+import './FeaturesSection.css';
 
 const features = [
   {
@@ -31,8 +28,8 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <div className="container2 mx-auto ">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 p-12">
+    <div className="features-container mx-auto px-6 md:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-12">
         {features.map((feature, index) => (
           <div key={index} className="text-center">
             <div className="text-4xl mb-4 text-gray-700">
